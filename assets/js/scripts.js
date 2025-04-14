@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Load header
-    fetch('../assets/html/header.html')
+    // Load header index.html
+    fetch('assets/html/header.html') // Corrected path
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('afterbegin', data);
         });
 
-    // Load footer
-    fetch('../assets/html/footer.html')
+    // Load footer index.html
+    fetch('assets/html/footer.html') // Corrected path
         .then(response => response.text())
         .then(data => {
             document.body.insertAdjacentHTML('beforeend', data);
