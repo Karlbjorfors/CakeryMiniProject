@@ -15,6 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('cupcakes-link').href = `${basePath}pages/products.html#cupcakes`;
             document.getElementById('weddingcakes-link').href = `${basePath}pages/products.html#weddingcakes`;
             document.getElementById('contact-link').href = `${basePath}pages/contact.html`;
+
+            // Dynamically set the logo path
+            document.getElementById('logo').src = `${basePath}assets/images/Logoclean.png`;
         });
 
     // Load footer
