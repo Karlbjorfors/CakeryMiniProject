@@ -37,5 +37,24 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownContent.classList.toggle('show');
         });
     }
+
+    const backToTopButton = document.getElementById('back-to-top');
+
+    // Show the button when the user scrolls down 100px
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    // Scroll back to the top when the button is clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 });
 

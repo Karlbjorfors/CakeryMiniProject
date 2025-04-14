@@ -200,6 +200,26 @@ footer div i {
     display: block;
 }
 
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Hidden by default */
+    background-color: #FFCC00; /* Bright yellow */
+    color: #003366; /* Dark blue */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+#back-to-top:hover {
+    background-color: #FFE4C4; /* Soft peach */
+}
+
 html {
     scroll-behavior: smooth;
 }
